@@ -723,15 +723,12 @@ footer {
         max-width: 480px;
     }
 
-    .card_nosotros {
-        margin-bottom: 8rem
-    }
-
     .card_nosotros .nosotros {
         flex-direction: column;
         align-items: center;
-        margin-bottom: 7rem;
+        margin-bottom: 15rem;
     }
+
 }
 
 /*COMO PARTICIPAR*/
