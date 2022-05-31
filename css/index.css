@@ -17,6 +17,7 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
+    line-height: normal; /*bootstrap*/
 }
 
 footer {
@@ -27,7 +28,15 @@ footer {
 a {
     text-decoration: none;
     color: white;
+    opacity: 100;
 }
+
+hr {
+    margin: 0;
+    color: white;
+    border-top: none;
+    opacity: calc(1);
+} /*bootstrap*/
 
 /*
 main {
@@ -52,6 +61,9 @@ nav ul {
     gap: 2rem;
     flex-wrap: wrap;
     flex-direction: row;
+    /*bootstrap*/
+    padding: 0rem;
+    margin: 0rem;
 }
 
 nav ul a {
@@ -139,7 +151,7 @@ body {
     gap: 1rem;
     text-align: center;
     margin: 2vh;
-}
+} 
 
 .cards div:hover {
     transform: scale(1.1, 1.1);
