@@ -75,7 +75,61 @@ nav ul a {
 
 nav ul a:hover {
     border-color: white;
+    color: white;
+} */
+
+
+
+/*
+nav {
+    flex-direction: column;
 }
+*/
+
+
+.navbar-nav a {
+    color: white;
+}
+
+.navbar-nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar-nav .nav-link.active {
+    color: white;
+}
+
+.navbar-nav {
+    text-align: center;
+    align-items: center;
+    font-size: 1.6rem;
+    background-color: black;
+    gap: 0.5rem;
+}
+
+.navbar-toggler {
+    background-color: white;
+}
+
+.navbar {
+    padding: 0;
+    justify-content: center;
+}
+
+/*
+.bg-light {
+    --bs-bg-opacity: 0;
+}
+*/
+
+
+
+
 
 header img {
     max-width: 200px;
@@ -585,6 +639,28 @@ ol {
     justify-content: space-around;
     align-items: center;
 } 
+
+/*INGRESAR*/
+.container {
+    width: 800px;
+    transform: translateY(5rem); 
+    border-style: double;
+    padding: 3rem;
+}
+
+label {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.container div a img {
+    margin-bottom: 3rem;
+    justify-content: center;
+}
+
+.container div {
+    margin-bottom: 1.5rem
+}
 
 /*FOOTER*/
 
