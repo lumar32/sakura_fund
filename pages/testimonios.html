@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/index.css">
     <link
         rel="stylesheet"
@@ -13,6 +14,29 @@
 </head>
     <body>
         <header>
+            <div>
+                <a href="../index.html" class="navbar-brand">
+                    <img class="logo" src="../img/logo-blanco.png">
+                </a>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggler="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="../pages/nosotros.html">NOSOTROS</a>
+                    <a class="nav-item nav-link" href="../pages/como-participar.html">¿CÓMO PARTICIPAR?</a>
+                    <a class="nav-item nav-link" href="../pages/proyectos.html">PROYECTOS</a>
+                    <a class="nav-item nav-link" href="../pages/imagenes.html">IMÁGENES</a>
+                    <a class="nav-item nav-link" href="../pages/testimonios.html">TESTIMONIOS</a>
+                    <a class="nav-item nav-link" href="../pages/contacto.html">CONTACTO</a>
+                    <a class="button_grey" href="../pages/ingresar.html">INGRESAR</a>
+                    <a class="button_darkblue" href="../pages/registrarme.html">REGISTRARME</a>
+                  </div>
+                </div>
+            <!--
             <a href="../index.html" class="logo">
                 <img src="../img/logo-blanco.png">
             </a>
@@ -44,6 +68,7 @@
                     </li>
                 </ul>
             </nav>
+            -->
         </header>
         <main>
             <hr/>       
@@ -71,41 +96,43 @@
             </section>
 
             <span class="tittle_section">Contanos tu experiencia operando con Sakura Fund</span>
-            <section class="experiencia_usuario">
-                <div>
-                    <P>Siendo <b>1 Muy Mala</b> y <b>5 Muy Buena</b></P>
-                        <form action=".index.js" method="get">
-                            <input type="radio" id="1" name="experiencia" value="1">
-                            <label for="1">Muy mala</label><br>
 
-                            <input type="radio" id="2" name="experiencia" value="2"> 
-                            <label for="2">Mala</label><br>
-
-                            <input type="radio" id="3" name="experiencia" value="3">
-                            <label for="3">Normal</label><br>
-
-                            <input type="radio" id="4" name="experiencia" value="4">
-                            <label for="4">Buena</label><br>
-
-                            <input type="radio" id="5" name="experiencia" value="5">
-                            <label for="5">Muy buena</label><br>
-                        </form>
-                </div>
-                <div>
-                    <p>¿Recomendarias Sakura Fund a tus amigos o conocidos?</p>
-                        <form action=".index.js">
-                            <label for="recomendacion"></label>
-                            <select id="recomendacion" name="recomendacion">
-                                <option value="si">Si</option>
-                                <option value="talvez">Talvez</option>
-                                <option value="no">No</option>
+            <section>
+                <form class="container2">
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputState">Tu experiencia fue: </label>
+                            <select id="inputState" class="form-control">
+                            <option selected>...</option>
+                            <option>Muy buena</option>
+                            <option>Buena</option>
+                            <option>Normal</option>
+                            <option>Mala</option>
+                            <option>Muy mala</option>
                             </select>
-                        </form>
-                </div>
-                <div>
-                    <textarea name="experiencia" id="contanos más" cols="30" rows="10"></textarea>
-                </div>
-                <input type="submit" value="Enviar">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputState">¿Recomendarias Sakura Fund a tus amigos o conocidos?</label>
+                            <select id="inputState" class="form-control">
+                            <option selected>...</option>
+                            <option>Si</option>
+                            <option>No</option>
+                            <option>Tal vez</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputState">Contanos más!</label>
+                            <textarea class="form-control" name="experiencia" id="contanos más" cols="41" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <button type="submit" class="btn btn-primary">Enviar comentarios</button>
+                    </div>
+                </form>
             </section>
         </main>
 

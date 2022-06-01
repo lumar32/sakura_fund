@@ -55,17 +55,18 @@ header {
     min-height: 10rem;
 }
 
+/*
 nav ul {
     display: flex;
     flex-basis: 60%;
     gap: 2rem;
     flex-wrap: wrap;
     flex-direction: row;
-    /*bootstrap*/
+    /*bootstrap*/ /*
     padding: 0rem;
     margin: 0rem;
-}
-
+}*/
+/*
 nav ul a {
     padding: .5rem;
     border-bottom: 2px solid black;
@@ -75,10 +76,8 @@ nav ul a {
 
 nav ul a:hover {
     border-color: white;
-    color: white;
-} */
-
-
+} 
+*/
 
 /*
 nav {
@@ -89,11 +88,14 @@ nav {
 
 .navbar-nav a {
     color: white;
+    border-bottom: 2px solid black;
+    transition: all .3s ease-in-out;
+    font-size: 1.6rem;
 }
 
 .navbar-nav a:hover {
     color: white;
-    text-decoration: underline;
+    border-color: white;
 }
 
 .navbar a {
@@ -588,6 +590,7 @@ body {
     gap: 2rem;
 }
 
+/*
 .experiencia_usuario {
     margin-top: 2rem;
     display: flex;
@@ -596,7 +599,16 @@ body {
     gap: 4rem;
     margin-bottom: 2rem;
 }
+*/
 
+.form-row {
+    display: flex;
+    justify-content: center;
+}
+
+.container2 {
+    padding: 3rem;
+}
 
 /* PROYECTOS */
 .proyectos {
