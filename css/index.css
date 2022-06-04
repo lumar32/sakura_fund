@@ -685,6 +685,7 @@ footer a {
         align-items: center;
         min-height: 22rem;
         width: 480px;
+        margin-bottom: var(--spacing-xxsmall);
     }
 
     header nav ul {
@@ -695,14 +696,12 @@ footer a {
     main {
         width: 480px;
     }
-}
 
-@media screen and (max-width: 480px) {
-footer {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        }
 }
 
 /*INDEX*/
