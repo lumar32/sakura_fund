@@ -1,0 +1,10 @@
+div {
+  background-color: red; }
+  div p {
+    color: blue; }
+
+span {
+  padding: 15px; }
+
+section article div {
+  background-color: white; }

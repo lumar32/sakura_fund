@@ -1,0 +1,23 @@
+/* EXTERNOS */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&display=swap');
+
+/* MISC */
+@import url(./misc/_variables.scss);
+@import url(./misc/_normalize);
+@import url(./misc/_animations.scss);
+
+/* PARTIALS */
+@import url(./partials/_header.scss);
+@import url(./partials/_footer.scss);
+
+/* PAGES */
+@import url(./pages/_como-participar.scss);
+@import url(./pages/_contacto.scss);
+@import url(./pages/_home.scss);
+@import url(./pages/_imagenes.scss);
+@import url(./pages/_ingresar.scss);
+@import url(./pages/_nosotros.scss);
+@import url(./pages/_proyectos.scss);
+@import url(./pages/_registrarme.scss);
+@import url(./pages/_testimonios.scss);
+
