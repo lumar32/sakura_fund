@@ -1,0 +1,107 @@
+/* COMO PARTICIPAR */
+
+.cards_participar {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--spacing-xsmall);
+    text-align: center;
+    margin-top: var(--spacing-medium);
+}
+
+.cards_participar div {
+    background-color: var(--tertiary);
+    width: 300px;
+    height: 260px;
+    border-style: double;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-xsmall);
+}
+
+.cards_participar div h2 {
+    font-size: var(--text-medium);
+    margin-top: var(--spacing-xxsmall);
+    margin-bottom: var(--spacing-xxsmall);
+}
+
+.cards_participar img {
+    max-width: 120px;
+    justify-content: center;
+}
+
+.cards_participar div .buttom_grey {
+    background-color: var(--color-buttom-1);
+    padding: 5px 10px 5px 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: var(--spacing-xxsmall);
+}
+
+.proceso_inversion {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--spacing-xxsmall);
+}
+
+.card_inversion {
+    padding: 5px 10px 5px 10px;
+    width: 920px;
+    height: 250px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: var(--spacing-medium);
+}
+
+.card_inversion div {
+    margin: var(--spacing-xsmall);
+    font-size: var(--text-base);
+}
+
+.card_inversion div p {
+    margin-top: var(--spacing-xxsmall);
+}
+
+.card_inversion img {
+    max-width: 200px;
+}
+
+/*REVISAR..*/
+.tabla {
+    margin: 0 auto; /*igual que FLEX y CENTER*/
+}
+
+.info_tabla {
+    margin: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+    .cards_participar {
+     flex-direction: column;
+     align-items: center;
+    }
+ 
+    .proceso_inversion img {
+        width: 450px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+ 
+    .card_inversion {
+        width: 400px;
+        height: 350px;
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    .card_inversion div {
+        margin: 0px;
+    }
+ }

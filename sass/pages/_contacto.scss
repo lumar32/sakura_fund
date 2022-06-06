@@ -1,0 +1,51 @@
+/* CONTACTO */
+
+.card_contacto {
+    margin-top: var(--spacing-xsmall);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+
+.card_contacto__info {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xsmall);
+    margin-left: var(--spacing-xsmall);
+    margin-bottom: var(--spacing-xsmall);
+    font-size: var(--spacing-medium);
+}
+
+.card_contacto .mapa iframe {
+    width: 600px;
+    margin: var(--spacing-medium);
+}
+
+.card_contacto__info img {
+    max-width: 50px;
+}
+
+@media screen and (max-width: 480px) {
+    .card_contacto {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        margin: var(--spacing-xsmall);
+    }
+
+    .card_contacto .mapa iframe {
+        width: 450px;
+        display: flex;
+        justify-items: center;
+        margin: var(--spacing-xsmall);
+    }
+
+    .mapa {
+        width: 450px;
+        margin: var(--spacing-xsmall);
+    }
+}

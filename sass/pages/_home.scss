@@ -1,0 +1,308 @@
+/* PRINCIPAL */
+
+.inicio {
+    background-image: url(../img/foto-portada.jpeg) ;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.inicio h1 {
+    font-size: var(--text-xxxlarge);
+    color: var(--primary);
+    margin-top: var(--spacing-large);
+    display: flex;
+}
+
+.inicio span {
+    font-size: var(--text-xlarge);
+    height: 45px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+}
+
+.button_grey {
+    color: var(--text-color);
+    background-color: var(--color-buttom-1);
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.button_darkblue {
+    color: var(--text-color);
+    background-color: var(--color-buttom-2);
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+.tittle_section {
+    display: block;
+    text-align: center;
+    font-size: var(--text-xxlarge);
+    margin-top: var(--spacing-large);
+}
+
+.cards {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--spacing-xsmall);
+    text-align: center;
+    margin: var(--spacing-medium);
+}
+
+.cards div:hover {
+    transform: scale(1.1, 1.1);
+    transition: 1s;
+}
+
+.cards_cripto {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--spacing-xsmall);
+    text-align: center;
+    margin: var(--spacing-medium);
+}
+
+.cards_sakura {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--spacing-xsmall);
+    text-align: center;
+    margin-top: var(--spacing-medium);
+}
+
+.cards div {
+    background-color: var(--secondary);
+    width: 350px;
+    height: 380px;
+    border-style: double;
+    display: inline-block;
+    justify-content: center;
+    align-items: center; 
+    transition: all 2s linear;
+    padding: var(--spacing-xsmall);
+}
+
+.cards_cripto div {
+    background-color: var(--secondary);
+    width: 350px;
+    height: 230px;
+    border-style: double;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-xsmall);
+}
+
+.cards_sakura div {
+    background-color: var(--tertiary);
+    width: 350px;
+    height: 280px;
+    border-style: double;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-xsmall);
+}
+
+.cards div h2 {
+    font-size: var(--text-large);
+    margin-top: var(--spacing-xxsmall);
+    margin-bottom: var(--spacing-xxsmall);
+}
+
+.cards_sakura div h2 {
+    font-size: var(--text-large);
+    margin-top: var(--spacing-xxsmall);
+    margin-bottom: var(--spacing-xxsmall);
+}
+
+.cards_cripto div h2 {
+    font-size: var(--text-large);
+    margin-top: var(--spacing-xxsmall);
+    margin-bottom: var(--spacing-xxsmall);
+}
+
+.cards img {
+    max-width: 120px;
+    justify-content: center;
+}
+
+.cards_cripto img {
+    max-width: 120px;
+    justify-content: center;
+}
+
+.cards_sakura img {
+    max-width: 120px;
+    justify-content: center;
+}
+
+
+.cards div .buttom_grey {
+    background-color: var(--color-buttom-1);
+    padding: 5px 10px 5px 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: var(--spacing-xxsmall);
+}
+
+.cards_cripto div .buttom_grey {
+    background-color: var(--color-buttom-1);
+    padding: 5px 10px 5px 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: var(--spacing-xxsmall);
+}
+
+.gallery1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: var(--spacing-xsmall);
+    font-family: var(--font-principal);
+    font-size: var(--text-large);
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: var(--spacing-large);
+}
+
+.gallery1__content:nth-of-type(1) {
+    grid-column: 2 /3;
+    grid-row: 1 / 4;
+}
+
+.gallery1__content:nth-of-type(2) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.gallery1__content:nth-of-type(3) {
+    grid-column: 3 /4;
+    grid-row: 1 / 2;
+}
+
+.gallery1__content:nth-of-type(4) {
+    grid-column: 1 /2;
+    grid-row: 3 / 4;
+}
+
+.gallery1__content:nth-of-type(5) {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+.registrarme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registrarme .button_darkblue {
+    width: 100%;
+    font-size: var(--text-medium);
+    margin-top: var(--spacing-small);
+    margin-bottom: var(--spacing-small);
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .cards_sakura {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards_cripto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        margin-top: var(--spacing-xsmall);
+        font-family: 'Courier New', Courier, monospace;
+        font-size: var(--text-large);
+        justify-items: center;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gallery1__content:nth-of-type(1) {
+        grid-column: 2 /3;
+        grid-row: 1 / 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 240px;
+    }
+
+    .gallery1__content img {
+        width: 240px;
+    }
+    
+    .gallery1__content:nth-of-type(2) {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        width: 240px;
+        height: 230px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .gallery1__content:nth-of-type(3) {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        width: 240px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .gallery1__content:nth-of-type(4) {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        width: 240px;
+        height: 230px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .gallery1__content:nth-of-type(5) {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5 ;
+        width: 240px;
+        height: 230px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

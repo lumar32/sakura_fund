@@ -1,0 +1,99 @@
+/* NOSOTROS */
+.nuestra_empresa {
+    padding: 5px 10px 5px 10px;
+    width: 920px;
+    height: 250px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: var(--spacing-medium);
+}
+
+.nuestra_empresa div {
+    margin: var(--spacing-xsmall);
+    font-size: var(--text-base);
+}
+
+.nuestra_empresa div p {
+    margin-top: var(--spacing-xxsmall);
+}
+
+.nuestra_empresa img {
+    max-width: 200px;
+}
+
+.cards_socios {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--spacing-xsmall);
+    text-align: center;
+    margin-top: var(--spacing-medium);
+}
+.cards_socios div {
+    background-color: var(--tertiary);
+    width: 350px;
+    height: 250px;
+    border-style: double;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-xsmall);
+}
+.cards_socios div h2 {
+    font-size: var(--text-large);
+    margin-top: var(--spacing-xxsmall);
+    margin-bottom: var(--spacing-xxsmall);
+}
+.cards_socios img {
+    max-width: 120px;
+    justify-content: center;
+    margin: var(--spacing-xsmall);
+}
+
+.argcapital img {
+    max-width: 200px;
+}
+
+.listo_para_participar {
+    width: 700px;
+    height: 100px;
+    margin-top: var(--spacing-xsmall);
+    display: flex;
+    align-items: center;
+    font-size: var(--text-base);
+}
+
+.card_participar {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+    .nuestra_empresa {
+        max-width: 480px;
+        flex-direction: column;
+        align-items: center;
+        height: 450px;
+    }
+
+    .card_socios {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15rem;
+    }
+
+    .cards_participar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .listo_para_participar {
+        max-width: 420px;
+    }
+}

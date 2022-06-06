@@ -1,0 +1,34 @@
+/* VARIABLES */
+:root {
+    /* Colors */
+    --primary: #000000;
+    --secondary: rgba(100, 148, 237, 0.5);
+    --tertiary: rgba(176, 196, 222, 0.50);
+    --text-color: #ffffff;
+    --sub-tittle: #808080;
+    --color-buttom-1: #808080;
+    --color-buttom-2: #00008b;
+
+    /* Spacings */
+    --spacing-xxsmall: 1rem;
+    --spacing-xsmall: 2rem;
+    --spacing-small: 2.4rem;
+    --spacing-medium: 3rem;
+    --spacing-large: 4rem;
+    --spacing-xlarge: 5rem;
+    --padding-nav: 0.5rem;
+
+    /* Font-family */
+    --font-principal: 'Comfortaa', cursive;
+    --font-title: '';
+    --font-subtittle: ;
+
+    /* Font-Sizes */
+    --text-xxxlarge: 5.2rem;
+    --text-xxlarge: 4rem;
+    --text-xlarge: 3rem;
+    --text-large: 2.4rem;
+    --text-medium: 2rem;
+    --text-base: 1.6rem;
+    --text-small: 1.4rem;
+}

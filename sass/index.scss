@@ -2,22 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&display=swap');
 
 /* MISC */
-@import url(./misc/_variables.scss);
-@import url(./misc/_normalize);
-@import url(./misc/_animations.scss);
+@import './misc/_variables';
+@import './misc/_normalize';
+@import './misc/_animations';
 
 /* PARTIALS */
-@import url(./partials/_header.scss);
-@import url(./partials/_footer.scss);
+@import './partials/_header';
+@import './partials/_footer';
 
 /* PAGES */
-@import url(./pages/_como-participar.scss);
-@import url(./pages/_contacto.scss);
-@import url(./pages/_home.scss);
-@import url(./pages/_imagenes.scss);
-@import url(./pages/_ingresar.scss);
-@import url(./pages/_nosotros.scss);
-@import url(./pages/_proyectos.scss);
-@import url(./pages/_registrarme.scss);
-@import url(./pages/_testimonios.scss);
-
+@import './pages/_como-participar';
+@import './pages/_contacto';
+@import './pages/_home';
+@import './pages/_imagenes';
+@import './pages/_ingresar';
+@import './pages/_nosotros';
+@import './pages/_proyectos';
+@import './pages/_registrarme';
+@import './pages/_testimonios';
