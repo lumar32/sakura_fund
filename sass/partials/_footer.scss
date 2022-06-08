@@ -2,22 +2,21 @@
 
 footer {
     margin-top: 1.6rem;
+    p {
+        margin-top: $spacing-xxsmall;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    a {
+        margin-top: $spacing-xxsmall;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: $spacing-xxsmall;
+    }
 }
 
-footer p {
-    margin-top: $spacing-xxsmall;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-footer a {
-    margin-top: $spacing-xxsmall;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: $spacing-xxsmall;
-}
 
 /*MEDIAS QUERIES*/
 @media screen and (max-width: 480px) {

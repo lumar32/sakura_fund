@@ -5,25 +5,24 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    &__info {
+        display: flex;
+        align-items: center;
+        gap: $spacing-xsmall;
+        margin-left: $spacing-xsmall;
+        margin-bottom: $spacing-xsmall;
+        font-size: $spacing-medium;
+        img {
+            max-width: 50px;
+        }
+    }
+    .mapa {
+        iframe {
+            width: 600px;
+            margin: $spacing-medium;
+        }
+    }
 } 
-
-.card_contacto__info {
-    display: flex;
-    align-items: center;
-    gap: $spacing-xsmall;
-    margin-left: $spacing-xsmall;
-    margin-bottom: $spacing-xsmall;
-    font-size: $spacing-medium;
-}
-
-.card_contacto .mapa iframe {
-    width: 600px;
-    margin: $spacing-medium;
-}
-
-.card_contacto__info img {
-    max-width: 50px;
-}
 
 @media screen and (max-width: 480px) {
     .card_contacto {
@@ -35,17 +34,15 @@
         align-content: center;
         justify-items: center;
         margin: $spacing-xsmall;
-    }
-
-    .card_contacto .mapa iframe {
-        width: 450px;
-        display: flex;
-        justify-items: center;
-        margin: $spacing-xsmall;
-    }
-
-    .mapa {
-        width: 450px;
-        margin: $spacing-xsmall;
+        .mapa {
+            width: 450px;
+            margin: $spacing-xsmall;
+            iframe {
+                width: 450px;
+                display: flex;
+                justify-items: center;
+                margin: $spacing-xsmall;
+            }
+        }
     }
 }

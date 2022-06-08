@@ -1,21 +1,20 @@
 /* TESTIMONIOS */
-.testimonios {
-    margin-top: $spacing-large;
-    max-width: 900px;
-}
 
 .supercard_testimonios {
     display: flex;
     justify-content: center;
-}
-
-.card_testimonios {
-    display: flex;
-    margin: $spacing-xxsmall;
-    font-size: $text-large;
-    color: $sub-tittle;
-    align-items: center;
-    gap: $spacing-xsmall;
+    .testimonios {
+        margin-top: $spacing-large;
+        max-width: 900px;
+        .card_testimonios {
+            display: flex;
+            margin: $spacing-xxsmall;
+            font-size: $text-large;
+            color: $sub-tittle;
+            align-items: center;
+            gap: $spacing-xsmall;
+        }
+    }
 }
 
 .experiencia_usuario {
@@ -28,11 +27,13 @@
 }
 
 @media screen and (max-width: 480px) {
-    .supercard_testimonios .card_testimonios{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-bottom: $spacing-medium;
+    .supercard_testimonios {
+        .card_testimonios{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: $spacing-medium;
+        }
     }
 
     .experiencia_usuario {

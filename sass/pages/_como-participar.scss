@@ -8,36 +8,32 @@
     gap: $spacing-xsmall;
     text-align: center;
     margin-top: $spacing-medium;
-}
-
-.cards_participar div {
-    background-color: $tertiary;
-    width: 300px;
-    height: 260px;
-    border-style: double;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    padding: $spacing-xsmall;
-}
-
-.cards_participar div h2 {
-    font-size: $text-medium;
-    margin-top: $spacing-xxsmall;
-    margin-bottom: $spacing-xxsmall;
-}
-
-.cards_participar img {
-    max-width: 120px;
-    justify-content: center;
-}
-
-.cards_participar div .buttom_grey {
-    background-color: $color-buttom-1;
-    padding: 5px 10px 5px 10px;
-    display: flex;
-    justify-content: center;
-    margin-top: $spacing-xxsmall;
+    div {
+        background-color: $tertiary;
+        width: 300px;
+        height: 260px;
+        border-style: double;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        padding: $spacing-xsmall;
+        h2 {
+            font-size: $text-medium;
+            margin-top: $spacing-xxsmall;
+            margin-bottom: $spacing-xxsmall;
+        }
+        img {
+            max-width: 120px;
+            justify-content: center;
+        }
+        .buttom_grey {
+            background-color: $color-buttom-1;
+            padding: 5px 10px 5px 10px;
+            display: flex;
+            justify-content: center;
+            margin-top: $spacing-xxsmall;
+        }
+    }
 }
 
 .proceso_inversion {
@@ -56,30 +52,16 @@
     justify-content: center;
     margin: 0 auto;
     margin-top: $spacing-medium;
-}
-
-.card_inversion div {
-    margin: $spacing-xsmall;
-    font-size: $text-base;
-}
-
-.card_inversion div p {
-    margin-top: $spacing-xxsmall;
-}
-
-.card_inversion img {
-    max-width: 200px;
-}
-
-/*REVISAR..*/
-.tabla {
-    margin: 0 auto; /*igual que FLEX y CENTER*/
-}
-
-.info_tabla {
-    margin: 20px;
-    text-align: center;
-    align-items: center;
+    div {
+        margin: $spacing-xsmall;
+        font-size: $text-base;
+        img {
+            max-width: 200px;
+        }
+        p {
+            margin-top: $spacing-xxsmall;
+        }
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -88,10 +70,12 @@
      align-items: center;
     }
  
-    .proceso_inversion img {
-        width: 450px;
-        margin-left: 1rem;
-        margin-right: 1rem;
+    .proceso_inversion {
+        img {
+            width: 450px;
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
     }
  
     .card_inversion {
@@ -99,9 +83,8 @@
         height: 350px;
         flex-direction: column;
         align-items: center;
-    }
- 
-    .card_inversion div {
-        margin: 0px;
+        div {
+            margin: 0px;
+        }
     }
  }

@@ -9,19 +9,16 @@
     justify-content: center;
     margin: 0 auto;
     margin-top: $spacing-medium;
-}
-
-.nuestra_empresa div {
-    margin: $spacing-xsmall;
-    font-size: $text-base;
-}
-
-.nuestra_empresa div p {
-    margin-top: $spacing-xxsmall;
-}
-
-.nuestra_empresa img {
-    max-width: 200px;
+    div {
+        margin: $spacing-xsmall;
+        font-size: $text-base;
+        p {
+            margin-top: $spacing-xxsmall;
+        }
+        img {
+            max-width: 200px;
+        }
+    }
 }
 
 .cards_socios {
@@ -32,39 +29,31 @@
     gap: $spacing-xsmall;
     text-align: center;
     margin-top: $spacing-medium;
-}
-.cards_socios div {
-    background-color: $tertiary;
-    width: 350px;
-    height: 250px;
-    border-style: double;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    padding: $spacing-xsmall;
-}
-.cards_socios div h2 {
-    font-size: $text-large;
-    margin-top: $spacing-xxsmall;
-    margin-bottom: $spacing-xxsmall;
-}
-.cards_socios img {
-    max-width: 120px;
-    justify-content: center;
-    margin: $spacing-xsmall;
-}
-
-.argcapital img {
-    max-width: 200px;
-}
-
-.listo_para_participar {
-    width: 700px;
-    height: 100px;
-    margin-top: $spacing-xsmall;
-    display: flex;
-    align-items: center;
-    font-size: $text-base;
+    div {
+        background-color: $tertiary;
+        width: 350px;
+        height: 250px;
+        border-style: double;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        padding: $spacing-xsmall;
+        h2 {
+            font-size: $text-large;
+            margin-top: $spacing-xxsmall;
+            margin-bottom: $spacing-xxsmall;
+        }
+        img {
+            max-width: 120px;
+            justify-content: center;
+            margin: $spacing-xsmall;
+        }
+        .argcapital {
+            img {
+            max-width: 200px;
+        }
+        }
+    }
 }
 
 .card_participar {
@@ -72,6 +61,14 @@
     align-items: center;
     text-align: center;
     justify-content: center;
+    .listo_para_participar {
+        width: 700px;
+        height: 100px;
+        margin-top: $spacing-xsmall;
+        display: flex;
+        align-items: center;
+        font-size: $text-base;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -91,9 +88,8 @@
     .cards_participar {
         flex-direction: column;
         align-items: center;
-    }
-
-    .listo_para_participar {
-        max-width: 420px;
+        .listo_para_participar {
+            max-width: 420px;
+        }
     }
 }

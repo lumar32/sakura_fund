@@ -20,12 +20,12 @@
     padding: 25px;
     transition: ease 0.3s;
     animation: efecto 1.2s infinite;
-}
-.container-boton:hover{
-    transform: scale(1.1);
-    transition: 0.3s;
-}
-.boton{
-    width: 50px;
-    transition: ease 1s;
+    &:hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+    .boton{
+        width: 50px;
+        transition: ease 1s;
+    }
 }

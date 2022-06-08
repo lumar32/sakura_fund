@@ -6,33 +6,28 @@ header {
     align-items: center;
     color: $text-color;
     min-height: 10rem;
-}
-
-nav ul {
-    display: flex;
-    flex-basis: 60%;
-    gap: $spacing-small;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-nav ul a {
-    padding: $padding-nav;
-    border-bottom: 2px solid $primary;
-    transition: all .3s ease-in-out;
-    font-size: $text-base;
-}
-
-nav ul a:hover {
-    border-color: $text-color;
-}
-
-header img {
-    max-width: 200px;
-}
-
-ul {
-    list-style-type: none;
+    nav {
+        ul {
+            display: flex;
+            flex-basis: 60%;
+            gap: $spacing-small;
+            flex-wrap: wrap;
+            flex-direction: row;
+            list-style-type: none;
+            a {
+                padding: $padding-nav;
+                border-bottom: 2px solid $primary;
+                transition: all .3s ease-in-out;
+                font-size: $text-base;
+                &:hover {
+                    border-color: $text-color;
+                }
+            }
+        }
+    }
+    img {
+        max-width: 200px;
+    }
 }
 
 /*MEDIAS QUERIES*/
@@ -43,11 +38,12 @@ ul {
         min-height: 22rem;
         width: 480px;
         margin-bottom: $spacing-xxsmall;
-    }
-
-    header nav ul {
-        justify-content: center;
-        width: 480px;
+        nav {
+            ul {
+                justify-content: center;
+                width: 480px;
+            }
+        }
     }
 
     main {
