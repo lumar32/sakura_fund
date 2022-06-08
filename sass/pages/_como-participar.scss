@@ -5,26 +5,26 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: var(--spacing-xsmall);
+    gap: $spacing-xsmall;
     text-align: center;
-    margin-top: var(--spacing-medium);
+    margin-top: $spacing-medium;
 }
 
 .cards_participar div {
-    background-color: var(--tertiary);
+    background-color: $tertiary;
     width: 300px;
     height: 260px;
     border-style: double;
     display: inline-block;
     justify-content: center;
     align-items: center;
-    padding: var(--spacing-xsmall);
+    padding: $spacing-xsmall;
 }
 
 .cards_participar div h2 {
-    font-size: var(--text-medium);
-    margin-top: var(--spacing-xxsmall);
-    margin-bottom: var(--spacing-xxsmall);
+    font-size: $text-medium;
+    margin-top: $spacing-xxsmall;
+    margin-bottom: $spacing-xxsmall;
 }
 
 .cards_participar img {
@@ -33,17 +33,17 @@
 }
 
 .cards_participar div .buttom_grey {
-    background-color: var(--color-buttom-1);
+    background-color: $color-buttom-1;
     padding: 5px 10px 5px 10px;
     display: flex;
     justify-content: center;
-    margin-top: var(--spacing-xxsmall);
+    margin-top: $spacing-xxsmall;
 }
 
 .proceso_inversion {
     display: flex;
     justify-content: center;
-    margin-top: var(--spacing-xxsmall);
+    margin-top: $spacing-xxsmall;
 }
 
 .card_inversion {
@@ -55,16 +55,16 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    margin-top: var(--spacing-medium);
+    margin-top: $spacing-medium;
 }
 
 .card_inversion div {
-    margin: var(--spacing-xsmall);
-    font-size: var(--text-base);
+    margin: $spacing-xsmall;
+    font-size: $text-base;
 }
 
 .card_inversion div p {
-    margin-top: var(--spacing-xxsmall);
+    margin-top: $spacing-xxsmall;
 }
 
 .card_inversion img {

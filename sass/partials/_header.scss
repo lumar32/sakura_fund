@@ -1,30 +1,30 @@
 /* HEADER */
 header {
-    background-color: var(--primary);
+    background-color: $primary;
     justify-content: space-around;
     display: flex;
     align-items: center;
-    color: var(--text-color);
+    color: $text-color;
     min-height: 10rem;
 }
 
 nav ul {
     display: flex;
     flex-basis: 60%;
-    gap: var(--spacing-small);
+    gap: $spacing-small;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
 nav ul a {
-    padding: var(--padding-nav);
-    border-bottom: 2px solid var(--primary);
+    padding: $padding-nav;
+    border-bottom: 2px solid $primary;
     transition: all .3s ease-in-out;
-    font-size: var(--text-base);
+    font-size: $text-base;
 }
 
 nav ul a:hover {
-    border-color: var(--text-color);
+    border-color: $text-color;
 }
 
 header img {
@@ -42,7 +42,7 @@ ul {
         align-items: center;
         min-height: 22rem;
         width: 480px;
-        margin-bottom: var(--spacing-xxsmall);
+        margin-bottom: $spacing-xxsmall;
     }
 
     header nav ul {

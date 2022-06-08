@@ -1,6 +1,6 @@
 /* TESTIMONIOS */
 .testimonios {
-    margin-top: var(--spacing-large);
+    margin-top: $spacing-large;
     max-width: 900px;
 }
 
@@ -11,20 +11,20 @@
 
 .card_testimonios {
     display: flex;
-    margin: var(--spacing-xxsmall);
-    font-size: var(--text-large);
-    color: var(--sub-tittle);
+    margin: $spacing-xxsmall;
+    font-size: $text-large;
+    color: $sub-tittle;
     align-items: center;
-    gap: var(--spacing-xsmall);
+    gap: $spacing-xsmall;
 }
 
 .experiencia_usuario {
-    margin-top: var(--spacing-xsmall);
+    margin-top: $spacing-xsmall;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: var(--spacing-large);
-    margin-bottom: var(--spacing-xsmall);
+    gap: $spacing-large;
+    margin-bottom: $spacing-xsmall;
 }
 
 @media screen and (max-width: 480px) {
@@ -32,7 +32,7 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin-bottom: var(--spacing-medium);
+        margin-bottom: $spacing-medium;
     }
 
     .experiencia_usuario {

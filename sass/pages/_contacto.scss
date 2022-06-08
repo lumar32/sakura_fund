@@ -1,7 +1,7 @@
 /* CONTACTO */
 
 .card_contacto {
-    margin-top: var(--spacing-xsmall);
+    margin-top: $spacing-xsmall;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -10,15 +10,15 @@
 .card_contacto__info {
     display: flex;
     align-items: center;
-    gap: var(--spacing-xsmall);
-    margin-left: var(--spacing-xsmall);
-    margin-bottom: var(--spacing-xsmall);
-    font-size: var(--spacing-medium);
+    gap: $spacing-xsmall;
+    margin-left: $spacing-xsmall;
+    margin-bottom: $spacing-xsmall;
+    font-size: $spacing-medium;
 }
 
 .card_contacto .mapa iframe {
     width: 600px;
-    margin: var(--spacing-medium);
+    margin: $spacing-medium;
 }
 
 .card_contacto__info img {
@@ -34,18 +34,18 @@
         justify-content: center;
         align-content: center;
         justify-items: center;
-        margin: var(--spacing-xsmall);
+        margin: $spacing-xsmall;
     }
 
     .card_contacto .mapa iframe {
         width: 450px;
         display: flex;
         justify-items: center;
-        margin: var(--spacing-xsmall);
+        margin: $spacing-xsmall;
     }
 
     .mapa {
         width: 450px;
-        margin: var(--spacing-xsmall);
+        margin: $spacing-xsmall;
     }
 }
