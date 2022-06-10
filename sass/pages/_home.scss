@@ -21,22 +21,6 @@
         display: flex;
         justify-content: center;
     }
-    .button_grey {
-        color: $text-color;
-        background-color: $color-buttom-1;
-        padding: 10px 20px 10px 20px;
-        text-decoration: none;
-        text-align: center;
-        border-radius: 5px;
-    }
-    .button_darkblue {
-        color: $text-color;
-        background-color: $color-buttom-2;
-        padding: 10px 20px 10px 20px;
-        text-decoration: none;
-        text-align: center;
-        border-radius: 5px;
-    }
 }
 
 .tittle_section {

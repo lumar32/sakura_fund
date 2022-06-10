@@ -11,22 +11,39 @@ html {
 }
 
 body {
-    font-family: var(--font-principal);
+    font-family: $font-principal;
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
-    background-color: var(--primary);
-    color: var(--text-color);
+    background-color: $primary;
+    color: $text-color;
     }
 
 footer {
-    font-family: var(--font-principal) ;
-    color: var(--text-color);
+    font-family: $font-principal ;
+    color: $text-color;
 }
 
 a {
     text-decoration: none;
-    color: var(--text-color);
+    color: $text-color;
+}
+
+.button_grey {
+    color: $text-color;
+    background-color: $color-buttom-1;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+}
+.button_darkblue {
+    color: $text-color;
+    background-color: $color-buttom-2;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
 }
 
 /*
