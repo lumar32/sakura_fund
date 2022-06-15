@@ -55,18 +55,18 @@ header {
     min-height: 10rem;
 }
 
-/*
+
 nav ul {
     display: flex;
     flex-basis: 60%;
     gap: 2rem;
     flex-wrap: wrap;
     flex-direction: row;
-    /*bootstrap*/ /*
+    /*bootstrap*/ 
     padding: 0rem;
     margin: 0rem;
-}*/
-/*
+}
+
 nav ul a {
     padding: .5rem;
     border-bottom: 2px solid black;
@@ -77,15 +77,13 @@ nav ul a {
 nav ul a:hover {
     border-color: white;
 } 
-*/
 
-/*
 nav {
     flex-direction: column;
 }
-*/
 
 
+/* 
 .navbar-nav a {
     color: white;
     border-bottom: 2px solid black;
@@ -121,7 +119,7 @@ nav {
 .navbar {
     padding: 0;
     justify-content: center;
-}
+} */
 
 /*
 .bg-light {
