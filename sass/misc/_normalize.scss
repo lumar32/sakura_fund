@@ -15,31 +15,31 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
-    background-color: $primary;
-    color: $text-color;
+    background-color: map-get($colors, primary);
+    color: map-get($colors, text-color);
     }
 
 footer {
     font-family: $font-principal ;
-    color: $text-color;
+    color: map-get($colors, text-color);
 }
 
 a {
     text-decoration: none;
-    color: $text-color;
+    color: map-get($colors, text-color);
 }
 
 .button_grey {
-    color: $text-color;
-    background-color: $color-buttom-1;
+    color: map-get($colors, text-color);
+    background-color: map-get($colors, color-buttom-1);
     padding: 10px 20px 10px 20px;
     text-decoration: none;
     text-align: center;
     border-radius: 5px;
 }
 .button_darkblue {
-    color: $text-color;
-    background-color: $color-buttom-2;
+    color: map-get($colors, text-color);
+    background-color: map-get($colors, color-buttom-2);
     padding: 10px 20px 10px 20px;
     text-decoration: none;
     text-align: center;

@@ -1,10 +1,10 @@
 /* HEADER */
 header {
-    background-color: $primary;
+    background-color: map-get($colors, primary);
     justify-content: space-around;
     display: flex;
     align-items: center;
-    color: $text-color;
+    color: map-get($colors, text-color);
     min-height: 10rem;
     nav {
         ul {
@@ -16,11 +16,11 @@ header {
             list-style-type: none;
             a {
                 padding: $padding-nav;
-                border-bottom: 2px solid $primary;
+                border-bottom: 2px solid map-get($colors, primary);
                 transition: all .3s ease-in-out;
                 font-size: $text-base;
                 &:hover {
-                    border-color: $text-color;
+                    border-color: map-get($colors, text-color);
                 }
             }
         }

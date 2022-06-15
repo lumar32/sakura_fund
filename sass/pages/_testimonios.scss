@@ -10,7 +10,7 @@
             display: flex;
             margin: $spacing-xxsmall;
             font-size: $text-large;
-            color: $sub-tittle;
+            color: map-get($colors, sub-tittle);
             align-items: center;
             gap: $spacing-xsmall;
         }

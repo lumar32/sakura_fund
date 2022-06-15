@@ -1,11 +1,27 @@
 /* VARIABLES */
-    $primary: #000000;
+/*     $primary: #000000;
     $secondary: rgba(100, 148, 237, 0.5);
     $tertiary: rgba(176, 196, 222, 0.50);
     $text-color: #ffffff;
     $sub-tittle: #808080;
     $color-buttom-1: #808080;
-    $color-buttom-2: #00008b;
+    $color-buttom-2: #00008b; */
+
+$colors: (
+    primary: #000000,
+    secondary: rgba(100, 148, 237, 0.5),
+    tertiary: rgba(176, 196, 222, 0.50),
+    text-color: #ffffff,
+    sub-tittle: #808080,
+    color-buttom-1: #808080,
+    color-buttom-2: #00008b
+);
+
+@each $color, $value in $colors {
+    .#{$color} {
+        color: #{$value};
+    }
+}
 
     /* Spacings */
     $spacing-xxsmall: 1rem;
