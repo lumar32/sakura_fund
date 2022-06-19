@@ -24,9 +24,34 @@
     }
 } 
 
+@media screen and (max-width: 760px) {
+    .card_contacto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        margin: $spacing-xsmall;
+        .card_contacto__info {
+            p {
+                font-size: $text-base;
+            }
+        }
+        .mapa {
+            width: 350px;
+            margin: $spacing-xsmall;
+            iframe {
+                width: 350px;
+                display: flex;
+                justify-items: center;
+                margin: $spacing-xsmall;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 480px) {
     .card_contacto {
-        width: 400px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -34,11 +59,43 @@
         align-content: center;
         justify-items: center;
         margin: $spacing-xsmall;
+        .card_contacto__info {
+            p {
+                font-size: $text-base;
+            }
+        }
         .mapa {
-            width: 450px;
+            width: 350px;
             margin: $spacing-xsmall;
             iframe {
-                width: 450px;
+                width: 350px;
+                display: flex;
+                justify-items: center;
+                margin: $spacing-xsmall;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .card_contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        margin: $spacing-xsmall;
+        .card_contacto__info {
+            p {
+                font-size: $text-base;
+            }
+        }
+        .mapa {
+            width: 250px;
+            margin: $spacing-xsmall;
+            iframe {
+                width: 250px;
                 display: flex;
                 justify-items: center;
                 margin: $spacing-xsmall;

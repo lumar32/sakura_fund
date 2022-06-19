@@ -8,3 +8,9 @@
     font-style: italic;
     color: map-get($colors, sub-tittle)
 }
+
+@media screen and (max-width: 320px) {
+    .subtitulo {
+        font-size: $text-base;
+    }
+ }

@@ -93,3 +93,28 @@
         }
     }
 }
+
+@media screen and (max-width: 320px) {
+    .nuestra_empresa {
+        max-width: 320px;
+        flex-direction: column;
+        align-items: center;
+        height: 450px;
+        margin-top: 15rem;
+        margin-bottom: 15rem;
+    }
+
+    .card_socios {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15rem;
+    }
+
+    .cards_participar {
+        flex-direction: column;
+        align-items: center;
+        .listo_para_participar {
+            max-width: 320px;
+        }
+    }
+}

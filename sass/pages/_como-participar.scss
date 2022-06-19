@@ -88,3 +88,28 @@
         }
     }
  }
+
+ @media screen and (max-width: 320px) {
+    .cards_participar {
+     flex-direction: column;
+     align-items: center;
+    }
+ 
+    .proceso_inversion {
+        img {
+            width: 320px;
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+    }
+ 
+    .card_inversion {
+        width: 300px;
+        height: 350px;
+        flex-direction: column;
+        align-items: center;
+        div {
+            margin: 0px;
+        }
+    }
+ }
