@@ -1,5 +1,5 @@
 /* EXTERNOS */
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Patua+One&display=swap");
 /* MISC */
 /* VARIABLES */
 .primary {
@@ -37,7 +37,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: "Comfortaa", cursive;
+  font-family: "Baloo 2", cursive;
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
@@ -45,7 +45,7 @@ body {
   color: #ffffff; }
 
 footer {
-  font-family: "Comfortaa", cursive;
+  font-family: "Baloo 2", cursive;
   color: #ffffff; }
 
 a {
@@ -89,7 +89,7 @@ main {
   border-radius: 50%;
   bottom: 20px;
   right: 25px;
-  padding: 25px;
+  padding: 20px;
   transition: ease 0.3s;
   animation: efecto 1.2s infinite; }
   .container-boton:hover {
@@ -181,32 +181,35 @@ header {
 
 /*FOOTER*/
 footer {
-  margin-top: 1.6rem; }
-  footer p {
-    margin-top: 1rem;
+  margin-top: 1.6rem;
+  display: flex;
+  justify-content: center; }
+  footer p, footer div a {
+    display: inline;
+    margin: 2.4rem;
+    font-size: 1.6rem; }
+  footer div {
     display: flex;
-    justify-content: space-around;
-    align-items: center; }
-  footer a {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 1rem; }
+    justify-content: center; }
+    footer div a img {
+      max-width: 25px; }
 
 /*MEDIAS QUERIES*/
 @media screen and (max-width: 480px) {
   footer {
     flex-direction: column;
     align-items: center;
-    text-align: center; } }
+    text-align: center; }
+    footer p, footer div a {
+      margin: 1rem; } }
 
 @media screen and (max-width: 320px) {
   footer {
-    width: 320px;
     flex-direction: column;
     align-items: center;
-    text-align: center; } }
+    text-align: center; }
+    footer p, footer div a {
+      margin: 1rem; } }
 
 /* PAGES */
 /* PRINCIPAL */
@@ -231,7 +234,12 @@ footer {
     height: 45px;
     padding: 3px;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    color: #808080; }
+  .inicio .buttom_grey, .inicio .button_darkblue {
+    margin-top: 4rem; }
+  .inicio .button_darkblue {
+    margin-left: 2.4rem; }
 
 .tittle_section {
   display: block;
@@ -250,7 +258,7 @@ footer {
   .cards div, .cards_cripto div, .cards_sakura div {
     background-color: rgba(100, 148, 237, 0.5);
     width: 350px;
-    height: 380px;
+    height: 430px;
     border-style: double;
     display: inline-block;
     justify-content: center;
@@ -261,10 +269,12 @@ footer {
       transform: scale(1.1, 1.1);
       transition: 1s; }
     .cards div h2, .cards_cripto div h2, .cards_sakura div h2 {
-      font-size: 2.4rem;
+      font-size: 3rem;
       margin-top: 1rem;
       margin-bottom: 1rem; }
-    .cards div .buttom_grey, .cards_cripto div .buttom_grey, .cards_sakura div .buttom_grey {
+    .cards div p, .cards_cripto div p, .cards_sakura div p, .cards footer div a, footer .cards div a, .cards_cripto footer div a, footer .cards_cripto div a, .cards_sakura footer div a, footer .cards_sakura div a {
+      font-size: 1.6rem; }
+    .cards div .buttom_grey, .cards_cripto div .buttom_grey, .cards_sakura div .buttom_grey, .cards div .inicio .button_darkblue, .inicio .cards div .button_darkblue, .cards_cripto div .inicio .button_darkblue, .inicio .cards_cripto div .button_darkblue, .cards_sakura div .inicio .button_darkblue, .inicio .cards_sakura div .button_darkblue {
       background-color: #808080;
       padding: 5px 10px 5px 10px;
       display: flex;
@@ -276,21 +286,31 @@ footer {
 
 .cards_cripto div {
   width: 350px;
-  height: 230px; }
+  height: 300px; }
 
 /*REVISAR..*/
 .tabla {
   margin: 0 auto;
-  /*igual que FLEX y CENTER*/ }
+  /*igual que FLEX y CENTER*/
+  width: 400px;
+  height: 100%;
+  text-align: center; }
+  .tabla thead tr {
+    font-size: 1.6rem; }
+  .tabla tbody tr {
+    font-size: 1.6rem; }
 
 .info_tabla {
   margin: 20px;
   text-align: center;
   align-items: center; }
+  .info_tabla p, .info_tabla footer div a, footer div .info_tabla a {
+    font-size: 1.6rem;
+    color: #808080; }
 
 .cards_sakura div {
   width: 350px;
-  height: 280px;
+  height: 100%;
   background-color: rgba(176, 196, 222, 0.5); }
 
 .gallery1 {
@@ -298,7 +318,7 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   margin-top: 2rem;
-  font-family: "Comfortaa", cursive;
+  font-family: "Baloo 2", cursive;
   font-size: 2.4rem;
   justify-items: center;
   justify-content: center;
@@ -336,105 +356,27 @@ footer {
   .cards, .cards_cripto, .cards_sakura {
     flex-direction: column;
     align-items: center; }
-  .cards_sakura {
-    flex-direction: column;
-    align-items: center; }
-  .cards_cripto {
-    flex-direction: column;
-    align-items: center; }
-  .gallery1 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    margin-top: 2rem;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 2.4rem;
-    justify-items: center;
-    text-align: center;
-    justify-content: center;
-    align-items: center; }
-    .gallery1__content:nth-of-type(1) {
-      grid-column: 2 /3;
-      grid-row: 1 / 5;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 240px;
-      height: 100%; }
-    .gallery1__content:nth-of-type(2) {
-      grid-column: 1 / 2;
-      grid-row: 1 / 2;
-      width: 240px;
-      height: 230px;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-    .gallery1__content:nth-of-type(3) {
-      grid-column: 1 / 2;
-      grid-row: 2 / 3;
-      width: 240px;
-      height: 250px;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-    .gallery1__content:nth-of-type(4) {
-      grid-column: 1 / 2;
-      grid-row: 3 / 4;
-      width: 240px;
-      height: 230px;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-    .gallery1__content:nth-of-type(5) {
-      grid-column: 1 / 2;
-      grid-row: 4 / 5;
-      width: 240px;
-      height: 230px;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-    .gallery1__content img {
-      width: 240px;
-      height: 100%; } }
-
-@media screen and (max-width: 320px) {
-  .inicio {
-    width: 320px; }
-    .inicio h1 {
-      font-size: 4rem; }
-    .inicio span {
-      font-size: 2.4rem;
-      margin-bottom: 1rem; }
-    .inicio .button_grey {
-      margin-bottom: 1rem; }
-  .cards, .cards_cripto, .cards_sakura {
-    width: 300px;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    margin: 2rem; }
     .cards div, .cards_cripto div, .cards_sakura div {
-      width: 300px; }
-  .cards_cripto {
-    width: 300px;
-    flex-direction: column;
-    flex-direction: column;
-    align-items: center;
-    margin: 2rem; }
-    .cards_cripto div {
-      width: 300px; }
+      width: 100%;
+      height: 100%; }
   .cards_sakura {
-    width: 300px;
     flex-direction: column;
-    flex-direction: column;
-    align-items: center;
-    margin: 2rem; }
+    align-items: center; }
     .cards_sakura div {
-      width: 300px; }
+      width: 100%;
+      height: 100%; }
+  .cards_cripto {
+    flex-direction: column;
+    align-items: center; }
+    .cards_cripto div {
+      width: 100%;
+      height: 100%; }
+  .tabla {
+    width: 80%; }
   .gallery1 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     margin-top: 2rem;
     font-family: 'Courier New', Courier, monospace;
     font-size: 2rem;
@@ -443,48 +385,89 @@ footer {
     justify-content: center;
     align-items: center; }
     .gallery1__content:nth-of-type(1) {
-      grid-column: 2 /3;
-      grid-row: 1 / 5;
+      grid-column: 1;
+      grid-row: 5 / 6;
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 160px;
-      height: 270px; }
+      width: 110px;
+      height: 100%; }
     .gallery1__content:nth-of-type(2) {
-      grid-column: 1 / 2;
+      grid-column: 1;
       grid-row: 1 / 2;
-      width: 160px;
-      height: 270px;
+      width: 110px;
+      height: 100%;
       display: flex;
       justify-content: center;
       align-items: center; }
     .gallery1__content:nth-of-type(3) {
-      grid-column: 1 / 2;
+      grid-column: 1;
       grid-row: 2 / 3;
-      width: 160px;
-      height: 250px;
+      width: 110px;
+      height: 100%;
       display: flex;
       justify-content: center;
       align-items: center; }
     .gallery1__content:nth-of-type(4) {
-      grid-column: 1 / 2;
+      grid-column: 1;
       grid-row: 3 / 4;
-      width: 140px;
-      height: 230px;
+      width: 110px;
+      height: 100%;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: flex-start;
+      transform: translateY(5rem); }
     .gallery1__content:nth-of-type(5) {
-      grid-column: 1 / 2;
+      grid-column: 1;
       grid-row: 4 / 5;
-      width: 140px;
-      height: 230px;
+      width: 110px;
+      height: 100%;
       display: flex;
       justify-content: center;
       align-items: center; }
     .gallery1__content img {
       width: 140px;
       height: 100%; } }
+
+@media screen and (max-width: 320px) {
+  .inicio {
+    width: 100%; }
+    .inicio h1 {
+      font-size: 4rem; }
+    .inicio span {
+      font-size: 2.4rem;
+      margin-bottom: 1rem; }
+    .inicio .button_grey {
+      margin-bottom: 1rem; }
+  .cards, .cards_cripto, .cards_sakura {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin: 2rem; }
+    .cards div, .cards_cripto div, .cards_sakura div {
+      width: 100%;
+      height: 100%; }
+  .cards_cripto {
+    width: 100%;
+    flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem; }
+    .cards_cripto div {
+      width: 100%;
+      height: 100%; }
+  .cards_sakura {
+    width: 100%;
+    flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem; }
+    .cards_sakura div {
+      width: 100%;
+      height: 100%; }
+  .tabla {
+    width: 80%; } }
 
 /* NOSOTROS */
 .nuestra_empresa {
@@ -500,7 +483,7 @@ footer {
   .nuestra_empresa div {
     margin: 2rem;
     font-size: 1.6rem; }
-    .nuestra_empresa div p {
+    .nuestra_empresa div p, .nuestra_empresa footer div a, footer .nuestra_empresa div a {
       margin-top: 1rem; }
     .nuestra_empresa div img {
       max-width: 200px; }
@@ -592,7 +575,7 @@ footer {
   .cards_participar div {
     background-color: rgba(176, 196, 222, 0.5);
     width: 300px;
-    height: 260px;
+    height: 100%;
     border-style: double;
     display: inline-block;
     justify-content: center;
@@ -605,7 +588,7 @@ footer {
     .cards_participar div img {
       max-width: 120px;
       justify-content: center; }
-    .cards_participar div .buttom_grey {
+    .cards_participar div .buttom_grey, .cards_participar div .inicio .button_darkblue, .inicio .cards_participar div .button_darkblue {
       background-color: #808080;
       padding: 5px 10px 5px 10px;
       display: flex;
@@ -632,7 +615,7 @@ footer {
     font-size: 1.6rem; }
     .card_inversion div img {
       max-width: 200px; }
-    .card_inversion div p {
+    .card_inversion div p, .card_inversion footer div a, footer .card_inversion div a {
       margin-top: 1rem; }
 
 @media screen and (max-width: 480px) {
@@ -794,12 +777,12 @@ footer {
       grid-column: 1 / 2;
       grid-row: 2 / 4; }
       .gallery2__content:nth-of-type(2) img {
-        width: 240px; }
+        width: 230px; }
     .gallery2__content:nth-of-type(3) {
       grid-column: 2 /3;
       grid-row: 2 / 4; }
       .gallery2__content:nth-of-type(3) img {
-        width: 240px; }
+        width: 230px; }
     .gallery2__content:nth-of-type(4) {
       grid-column: 1 / 3;
       grid-row: 4 / 5; }
@@ -809,12 +792,12 @@ footer {
       grid-column: 1 / 2;
       grid-row: 5 / 7; }
       .gallery2__content:nth-of-type(5) img {
-        width: 240px; }
+        width: 230px; }
     .gallery2__content:nth-of-type(6) {
       grid-column: 2 / 3;
       grid-row: 5 / 7; }
       .gallery2__content:nth-of-type(6) img {
-        width: 240px; }
+        width: 230px; }
     .gallery2__content:nth-of-type(7) {
       grid-column: 1 / 3;
       grid-row: 7 / 9; }
@@ -887,12 +870,17 @@ footer {
       gap: 2rem; }
 
 .experiencia_usuario {
-  margin-top: 2rem;
+  margin: 0 auto;
+  width: 100%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  gap: 4rem;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 2.4rem;
   margin-bottom: 2rem; }
+  .experiencia_usuario p, .experiencia_usuario footer div a, footer div .experiencia_usuario a {
+    font-size: 1.6rem; }
 
 @media screen and (max-width: 480px) {
   .supercard_testimonios .testimonios .card_testimonios {
@@ -943,7 +931,7 @@ footer {
     align-content: center;
     justify-items: center;
     margin: 2rem; }
-    .card_contacto .card_contacto__info p {
+    .card_contacto .card_contacto__info p, .card_contacto .card_contacto__info footer div a, footer div .card_contacto .card_contacto__info a {
       font-size: 1.6rem; }
     .card_contacto .mapa {
       width: 350px;
@@ -963,7 +951,7 @@ footer {
     align-content: center;
     justify-items: center;
     margin: 2rem; }
-    .card_contacto .card_contacto__info p {
+    .card_contacto .card_contacto__info p, .card_contacto .card_contacto__info footer div a, footer div .card_contacto .card_contacto__info a {
       font-size: 1.6rem; }
     .card_contacto .mapa {
       width: 350px;
@@ -983,7 +971,7 @@ footer {
     align-content: center;
     justify-items: center;
     margin: 2rem; }
-    .card_contacto .card_contacto__info p {
+    .card_contacto .card_contacto__info p, .card_contacto .card_contacto__info footer div a, footer div .card_contacto .card_contacto__info a {
       font-size: 1.6rem; }
     .card_contacto .mapa {
       width: 250px;

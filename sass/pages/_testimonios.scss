@@ -18,12 +18,18 @@
 }
 
 .experiencia_usuario {
-    margin-top: $spacing-xsmall;
+    margin: 0 auto;
+    width: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    gap: $spacing-large;
+    align-items: center;
+    margin-top: $spacing-xsmall;
+    gap: $spacing-small;
     margin-bottom: $spacing-xsmall;
+    p {
+        font-size: $text-base;
+    }
 }
 
 @media screen and (max-width: 480px) {

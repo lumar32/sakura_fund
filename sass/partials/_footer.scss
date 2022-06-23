@@ -2,18 +2,22 @@
 
 footer {
     margin-top: 1.6rem;
+    display: flex;
+    justify-content: center;
     p {
-        margin-top: $spacing-xxsmall;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        display: inline;
+        margin: $spacing-small;
+        font-size: $text-base;
     }
-    a {
-        margin-top: $spacing-xxsmall;
+    div {
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin-bottom: $spacing-xxsmall;
+        justify-content: center;
+        a {
+            @extend p;
+            img {
+                max-width: 25px;
+            }
+        }
     }
 }
 
@@ -24,14 +28,19 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        p {
+            margin: $spacing-xxsmall;
+        }
         }
 }
 
 @media screen and (max-width: 320px) {
     footer {
-        width: 320px;
         flex-direction: column;
         align-items: center;
         text-align: center;
+        p {
+            margin: $spacing-xxsmall;
+        }
         }
 }
