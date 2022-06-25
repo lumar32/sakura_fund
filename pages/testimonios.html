@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
     <meta name="keywords" content="INVERSIONES, REAL ESTATE, CRIPTOMONEDAS, CROWDFUNDING, INMOBILIARIO, BITCOIN, TESTIMONIOS, EXPERIENCIAS, REGISTRARME">
     <meta name="description=" content="Conocé los testimonios de personas que invirtieron con Sakura Fund.">
-    <!-- <link rel="stylesheet" href="../css/index.css"> -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/translated.css">
     <link
         rel="stylesheet"
@@ -74,41 +74,42 @@
             </section>
 
             <span class="tittle_section">Contanos tu experiencia operando con Sakura Fund</span>
-            <section class="experiencia_usuario">
-                <div>
-                    <P>Siendo <b>1 Muy Mala</b> y <b>5 Muy Buena</b></P>
-                        <form action=".index.js" method="get">
-                            <input type="radio" id="1" name="experiencia" value="1">
-                            <label for="1">1</label><br>
-
-                            <input type="radio" id="2" name="experiencia" value="2"> 
-                            <label for="2">2</label><br>
-
-                            <input type="radio" id="3" name="experiencia" value="3">
-                            <label for="3">3</label><br>
-
-                            <input type="radio" id="4" name="experiencia" value="4">
-                            <label for="4">4</label><br>
-
-                            <input type="radio" id="5" name="experiencia" value="5">
-                            <label for="5">5</label><br>
-                        </form>
-                </div>
-                <div>
-                    <p>¿Recomendarias Sakura Fund a tus amigos o conocidos?</p>
-                        <form action=".index.js">
-                            <label for="recomendacion"></label>
-                            <select id="recomendacion" name="recomendacion">
-                                <option value="si">Si</option>
-                                <option value="talvez">Talvez</option>
-                                <option value="no">No</option>
+            <section>
+                <form class="container2">
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputState">Tu experiencia fue: </label>
+                            <select id="inputState" class="form-control">
+                            <option selected>...</option>
+                            <option>Muy buena</option>
+                            <option>Buena</option>
+                            <option>Normal</option>
+                            <option>Mala</option>
+                            <option>Muy mala</option>
                             </select>
-                        </form>
-                </div>
-                <div>
-                    <textarea name="experiencia" id="contanos más" cols="30" rows="10">Nos interesa tu experiencia, contanos!</textarea>
-                </div>
-                <input class="button_darkblue" type="submit" value="Enviar">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputState">¿Recomendarias Sakura Fund a tus amigos o conocidos?</label>
+                            <select id="inputState" class="form-control">
+                            <option selected>...</option>
+                            <option>Si</option>
+                            <option>No</option>
+                            <option>Tal vez</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputState">Contanos más!</label>
+                            <textarea class="form-control" name="experiencia" id="contanos más" cols="41" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <button type="submit" class="btn btn-primary">Enviar comentarios</button>
+                    </div>
+                </form>
             </section>
         </main>
         <hr>    

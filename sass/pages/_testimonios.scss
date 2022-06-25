@@ -17,18 +17,14 @@
     }
 }
 
-.experiencia_usuario {
-    margin: 0 auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: $spacing-xsmall;
-    gap: $spacing-small;
-    margin-bottom: $spacing-xsmall;
-    p {
-        font-size: $text-base;
+.container2 {
+    padding: $spacing-medium;
+    .form-row{
+        display: flex;
+        justify-content: center;
+        .form-group {
+            margin-bottom: $spacing-xsmall;
+        }
     }
 }
 
@@ -44,11 +40,6 @@
             }
         }
     }
-
-    .experiencia_usuario {
-        flex-direction: column;
-        align-items: center;
-    }
 }
 
 @media screen and (max-width: 320px) {
@@ -62,10 +53,5 @@
                 margin-bottom: $spacing-medium;
             }
         }
-    }
-
-    .experiencia_usuario {
-        flex-direction: column;
-        align-items: center;
     }
 }

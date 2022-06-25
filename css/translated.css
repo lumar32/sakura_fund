@@ -871,18 +871,13 @@ footer {
       align-items: center;
       gap: 2rem; }
 
-.experiencia_usuario {
-  margin: 0 auto;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-  gap: 2.4rem;
-  margin-bottom: 2rem; }
-  .experiencia_usuario p, .experiencia_usuario footer div a, footer div .experiencia_usuario a {
-    font-size: 1.6rem; }
+.container2 {
+  padding: 3rem; }
+  .container2 .form-row {
+    display: flex;
+    justify-content: center; }
+    .container2 .form-row .form-group {
+      margin-bottom: 2rem; }
 
 @media screen and (max-width: 480px) {
   .supercard_testimonios .testimonios .card_testimonios {
@@ -890,10 +885,7 @@ footer {
     align-items: center;
     text-align: center;
     margin-bottom: 3rem;
-    font-size: 2rem; }
-  .experiencia_usuario {
-    flex-direction: column;
-    align-items: center; } }
+    font-size: 2rem; } }
 
 @media screen and (max-width: 320px) {
   .supercard_testimonios .testimonios .card_testimonios {
@@ -901,10 +893,7 @@ footer {
     align-items: center;
     text-align: center;
     font-size: 1.6rem;
-    margin-bottom: 3rem; }
-  .experiencia_usuario {
-    flex-direction: column;
-    align-items: center; } }
+    margin-bottom: 3rem; } }
 
 /* CONTACTO */
 .card_contacto {
