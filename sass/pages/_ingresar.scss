@@ -1,0 +1,24 @@
+/* INGRESAR */ 
+.container {
+    width: 800px;
+    transform: translateY(5rem); 
+    border-style: double;
+    padding: 3rem;
+    div {
+        margin-bottom: 1.5rem;
+        a {
+            img {
+                margin-bottom: 3rem;
+                justify-content: center;
+            }
+        }
+    }
+    .form-group {
+        label {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+

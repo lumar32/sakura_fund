@@ -983,3 +983,18 @@ footer {
         display: flex;
         justify-items: center;
         margin: 2rem; } }
+
+/* INGRESAR */
+.container {
+  width: 800px;
+  transform: translateY(5rem);
+  border-style: double;
+  padding: 3rem; }
+  .container div {
+    margin-bottom: 1.5rem; }
+    .container div a img {
+      margin-bottom: 3rem;
+      justify-content: center; }
+  .container .form-group label {
+    font-size: 2rem;
+    margin-bottom: 1rem; }
