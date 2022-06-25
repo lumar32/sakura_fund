@@ -1,6 +1,5 @@
 /* INGRESAR */ 
 .container {
-    width: 800px;
     transform: translateY(5rem); 
     border-style: double;
     padding: 3rem;
@@ -8,6 +7,7 @@
         margin-bottom: 1.5rem;
         a {
             img {
+                width: 25%;
                 margin-bottom: 3rem;
                 justify-content: center;
             }

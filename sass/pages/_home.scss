@@ -183,21 +183,11 @@
     }
 
     .cards_sakura {
-        flex-direction: column;
-        align-items: center;
-        div {
-            width: 100%;
-            height: 100%;
-        }
+        @extend .cards;
     }
 
     .cards_cripto {
-        flex-direction: column;
-        align-items: center;
-        div {
-            width: 100%;
-            height: 100%;
-        }
+        @extend .cards;
     }
 
     .tabla {
@@ -263,9 +253,8 @@
 }
 
 @media screen and (max-width: 320px) {
-    
     .inicio {
-        width: 100%;
+        width: 90%;
         h1 {
             font-size: $text-xxlarge;
         }
@@ -280,10 +269,12 @@
     }
 
     .cards {
-        width: 100%;
+        width: 90%;
         flex-direction: column;
         align-items: center;
         justify-items: center;
+        justify-content: center;
+        align-content: center;
         margin: $spacing-xsmall;
         div {
             width: 100%;
@@ -292,30 +283,10 @@
     }
 
     .cards_cripto {
-        width: 100%;
-        flex-direction: column;
-        flex-direction: column;
-        align-items: center;
-        margin: $spacing-xsmall;
-        div {
-            width: 100%;
-            height: 100%;
-        }
+        @extend .cards;
     }
 
     .cards_sakura {
-        width: 100%;
-        flex-direction: column;
-        flex-direction: column;
-        align-items: center;
-        margin: $spacing-xsmall;
-        div {
-            width: 100%;
-            height: 100%;
-        }
-    }
-
-    .tabla {
-        width: 80%;
+        @extend .cards;
     }
 }

@@ -132,52 +132,36 @@ header {
     align-items: center;
     justify-items: center;
     min-height: 22rem;
-    width: 1200px;
     margin-bottom: 1rem; }
     header nav ul {
-      justify-content: center;
-      width: 1200px; }
-  main {
-    width: 1200px; } }
+      justify-content: center; } }
 
 @media screen and (max-width: 760px) {
   header {
     flex-direction: column;
     align-items: center;
     min-height: 22rem;
-    width: 760px;
     margin-bottom: 1rem; }
     header nav ul {
-      justify-content: center;
-      width: 760px; }
-  main {
-    width: 760px; } }
+      justify-content: center; } }
 
 @media screen and (max-width: 480px) {
   header {
     flex-direction: column;
     align-items: center;
     min-height: 22rem;
-    width: 480px;
     margin-bottom: 1rem; }
     header nav ul {
-      justify-content: center;
-      width: 480px; }
-  main {
-    width: 480px; } }
+      justify-content: center; } }
 
 @media screen and (max-width: 320px) {
   header {
     flex-direction: column;
     align-items: center;
     min-height: 26rem;
-    width: 320px;
     margin-bottom: 1rem; }
     header nav ul {
-      justify-content: center;
-      width: 320px; }
-  main {
-    width: 320px; } }
+      justify-content: center; } }
 
 /*FOOTER*/
 footer {
@@ -442,7 +426,7 @@ footer {
     .inicio .button_grey {
       margin-bottom: 1rem; }
   .cards, .cards_cripto, .cards_sakura {
-    width: 100%;
+    width: 80%;
     flex-direction: column;
     align-items: center;
     justify-items: center;
@@ -451,7 +435,7 @@ footer {
       width: 100%;
       height: 100%; }
   .cards_cripto {
-    width: 100%;
+    width: 80%;
     flex-direction: column;
     flex-direction: column;
     align-items: center;
@@ -460,7 +444,7 @@ footer {
       width: 100%;
       height: 100%; }
   .cards_sakura {
-    width: 100%;
+    width: 80%;
     flex-direction: column;
     flex-direction: column;
     align-items: center;
@@ -978,13 +962,13 @@ footer {
 
 /* INGRESAR */
 .container {
-  width: 800px;
   transform: translateY(5rem);
   border-style: double;
   padding: 3rem; }
   .container div {
     margin-bottom: 1.5rem; }
     .container div a img {
+      width: 25%;
       margin-bottom: 3rem;
       justify-content: center; }
   .container .form-group label {
