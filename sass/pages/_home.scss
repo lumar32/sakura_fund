@@ -23,12 +23,12 @@
         justify-content: center;
         color: map-get($colors, sub-tittle);
     }
-    .buttom_grey {
+    .botones_inicio {
         margin-top: $spacing-large;
-    }
-    .button_darkblue {
-        @extend .buttom_grey;
-        margin-left: $spacing-small;
+        font-size: $text-small;
+        .button_darkblue {
+            margin-left: $spacing-small;
+        }
     }
 }
 
@@ -68,12 +68,13 @@
         p {
             font-size: $text-base;
         }
-        .buttom_grey {
+        .button_grey {
             background-color: map-get($colors, color-buttom-1);
             padding: 5px 10px 5px 10px;
             display: flex;
             justify-content: center;
             margin-top: $spacing-xxsmall;
+            font-size: $text-small;
         }
         img {
             max-width: 120px;
@@ -85,7 +86,7 @@
 .cards_cripto {
     @extend .cards;
     div {
-        @include sizes(350px,300px);
+        @include sizes(350px,310px);
     }
 }
 

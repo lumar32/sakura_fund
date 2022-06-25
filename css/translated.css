@@ -236,10 +236,11 @@ footer {
     display: flex;
     justify-content: center;
     color: #808080; }
-  .inicio .buttom_grey, .inicio .button_darkblue {
-    margin-top: 4rem; }
-  .inicio .button_darkblue {
-    margin-left: 2.4rem; }
+  .inicio .botones_inicio {
+    margin-top: 4rem;
+    font-size: 1.4rem; }
+    .inicio .botones_inicio .button_darkblue {
+      margin-left: 2.4rem; }
 
 .tittle_section {
   display: block;
@@ -274,19 +275,20 @@ footer {
       margin-bottom: 1rem; }
     .cards div p, .cards_cripto div p, .cards_sakura div p, .cards footer div a, footer .cards div a, .cards_cripto footer div a, footer .cards_cripto div a, .cards_sakura footer div a, footer .cards_sakura div a {
       font-size: 1.6rem; }
-    .cards div .buttom_grey, .cards_cripto div .buttom_grey, .cards_sakura div .buttom_grey, .cards div .inicio .button_darkblue, .inicio .cards div .button_darkblue, .cards_cripto div .inicio .button_darkblue, .inicio .cards_cripto div .button_darkblue, .cards_sakura div .inicio .button_darkblue, .inicio .cards_sakura div .button_darkblue {
+    .cards div .button_grey, .cards_cripto div .button_grey, .cards_sakura div .button_grey {
       background-color: #808080;
       padding: 5px 10px 5px 10px;
       display: flex;
       justify-content: center;
-      margin-top: 1rem; }
+      margin-top: 1rem;
+      font-size: 1.4rem; }
     .cards div img, .cards_cripto div img, .cards_sakura div img {
       max-width: 120px;
       justify-content: center; }
 
 .cards_cripto div {
   width: 350px;
-  height: 300px; }
+  height: 310px; }
 
 /*REVISAR..*/
 .tabla {
@@ -588,7 +590,7 @@ footer {
     .cards_participar div img {
       max-width: 120px;
       justify-content: center; }
-    .cards_participar div .buttom_grey, .cards_participar div .inicio .button_darkblue, .inicio .cards_participar div .button_darkblue {
+    .cards_participar div .buttom_grey {
       background-color: #808080;
       padding: 5px 10px 5px 10px;
       display: flex;
