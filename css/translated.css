@@ -587,15 +587,18 @@ footer {
       font-size: 2rem;
       margin-top: 1rem;
       margin-bottom: 1rem; }
+    .cards_participar div p, .cards_participar footer div a, footer .cards_participar div a {
+      font-size: 1.6rem; }
     .cards_participar div img {
       max-width: 120px;
       justify-content: center; }
-    .cards_participar div .buttom_grey {
+    .cards_participar div .button_grey {
       background-color: #808080;
       padding: 5px 10px 5px 10px;
       display: flex;
       justify-content: center;
-      margin-top: 1rem; }
+      margin-top: 1rem;
+      font-size: 1.4rem; }
 
 .proceso_inversion {
   display: flex;

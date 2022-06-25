@@ -22,16 +22,20 @@
             margin-top: $spacing-xxsmall;
             margin-bottom: $spacing-xxsmall;
         }
+        p {
+            font-size: $text-base;
+        }
         img {
             max-width: 120px;
             justify-content: center;
         }
-        .buttom_grey {
+        .button_grey {
             background-color: map-get($colors, color-buttom-1);
             padding: 5px 10px 5px 10px;
             display: flex;
             justify-content: center;
             margin-top: $spacing-xxsmall;
+            font-size: $text-small;
         }
     }
 }
