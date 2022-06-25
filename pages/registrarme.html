@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/translated.css">
+    <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>INGRESAR</title>
+</head>
+<body>
+    <form class="container">
+        <div>
+            <a href="../index.html" class="navbar-brand">
+              <img class="logo" src="../img/logo-blanco.png">
+            </a>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPassword4">Contraseña</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="***">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">Dirección residencial</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Dirección">
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="inputState">Provincia</label>
+                <select id="inputState" class="form-control">
+                <option selected>Choose...</option>
+                <option>Ciuedad de Buenos Aires</option>
+                <option>Buenos Aires</option>
+                <option>Río Negro</option>
+                </select>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputZip">CP</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                Acepto los términos y condiciones
+                </label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Crear cuenta</button>
+    </form>
+</body>
