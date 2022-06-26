@@ -9,8 +9,8 @@
     color: map-get($colors, sub-tittle)
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) and (min-width:320px) {
     .subtitulo {
         font-size: $text-base;
     }
- }
+}

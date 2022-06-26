@@ -71,50 +71,42 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) and (min-width:320px) {
     .nuestra_empresa {
-        max-width: 480px;
+        width: 100%;
         flex-direction: column;
         align-items: center;
-        height: 450px;
-    }
-
-    .card_socios {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 15rem;
-    }
-
-    .cards_participar {
-        flex-direction: column;
-        align-items: center;
-        .listo_para_participar {
-            max-width: 420px;
+        div {
+            width: 100%;
+            img {
+                width: 100%;
+            }
         }
     }
-}
-
-@media screen and (max-width: 320px) {
-    .nuestra_empresa {
-        max-width: 320px;
-        flex-direction: column;
-        align-items: center;
-        height: 450px;
-        margin-top: 15rem;
-        margin-bottom: 15rem;
-    }
 
     .card_socios {
+        width: 100%;
         flex-direction: column;
         align-items: center;
         margin-bottom: 15rem;
+        div {
+            width: 100%;
+            flex-direction: column;
+            img {
+                width: 100%;
+            }
+            .argcapital {
+                width: 100%;
+            }
+        }
     }
 
     .cards_participar {
+        width: 100%;
         flex-direction: column;
         align-items: center;
         .listo_para_participar {
-            max-width: 320px;
+            width: 100%;
         }
     }
 }

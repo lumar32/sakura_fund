@@ -24,33 +24,7 @@
     }
 } 
 
-@media screen and (max-width: 760px) {
-    .card_contacto {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        margin: $spacing-xsmall;
-        .card_contacto__info {
-            p {
-                font-size: $text-base;
-            }
-        }
-        .mapa {
-            width: 350px;
-            margin: $spacing-xsmall;
-            iframe {
-                width: 350px;
-                display: flex;
-                justify-items: center;
-                margin: $spacing-xsmall;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) and (min-width:320px) {
     .card_contacto {
         display: flex;
         flex-direction: column;
@@ -65,37 +39,10 @@
             }
         }
         .mapa {
-            width: 350px;
+            width: 100%;
             margin: $spacing-xsmall;
             iframe {
-                width: 350px;
-                display: flex;
-                justify-items: center;
-                margin: $spacing-xsmall;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .card_contacto {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        margin: $spacing-xsmall;
-        .card_contacto__info {
-            p {
-                font-size: $text-base;
-            }
-        }
-        .mapa {
-            width: 250px;
-            margin: $spacing-xsmall;
-            iframe {
-                width: 250px;
+                width: 90%;
                 display: flex;
                 justify-items: center;
                 margin: $spacing-xsmall;
