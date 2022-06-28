@@ -108,20 +108,22 @@ header {
   align-items: center;
   color: #ffffff;
   min-height: 10rem; }
-  header nav ul {
-    display: flex;
-    flex-basis: 60%;
-    gap: 2.4rem;
-    flex-wrap: wrap;
-    flex-direction: row;
-    list-style-type: none; }
-    header nav ul a {
-      padding: 0.5rem;
-      border-bottom: 2px solid #000000;
-      transition: all .3s ease-in-out;
-      font-size: 1.6rem; }
-      header nav ul a:hover {
-        border-color: #ffffff; }
+  header nav {
+    margin-top: 2rem; }
+    header nav ul {
+      display: flex;
+      flex-basis: 60%;
+      gap: 2.4rem;
+      flex-wrap: wrap;
+      flex-direction: row;
+      list-style-type: none; }
+      header nav ul a {
+        padding: 0.5rem;
+        border-bottom: 2px solid #000000;
+        transition: all .3s ease-in-out;
+        font-size: 1.6rem; }
+        header nav ul a:hover {
+          border-color: #ffffff; }
   header img {
     max-width: 200px; }
 
@@ -561,7 +563,9 @@ footer {
   .card_inversion {
     width: 100%;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 5rem;
+    margin-top: 5rem; }
     .card_inversion div {
       margin: 0px; } }
 
