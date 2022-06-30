@@ -1,12 +1,10 @@
 /* NOSOTROS */
 .nuestra_empresa {
     padding: 5px 10px 5px 10px;
-    width: 920px;
+    width: 100%;
     height: 250px;
     display: flex;
     justify-items: center;
-    align-items: center;
-    justify-content: center;
     margin: 0 auto;
     margin-top: $spacing-medium;
     div {
@@ -22,6 +20,7 @@
 }
 
 .cards_socios {
+    width: 100%;
     justify-content: center;
     display: flex;
     flex-direction: row;
@@ -31,7 +30,7 @@
     margin-top: $spacing-medium;
     div {
         background-color: map-get($colors, tertiary);
-        width: 350px;
+        width: 320px;
         height: 250px;
         border-style: double;
         display: inline-block;
@@ -62,22 +61,23 @@
     text-align: center;
     justify-content: center;
     .listo_para_participar {
-        width: 700px;
+        width: 100%;
         height: 100px;
         margin-top: $spacing-xsmall;
         display: flex;
         align-items: center;
-        font-size: $text-base;
+        font-size: $text-base;    
+        justify-content: center;
     }
 }
 
 @media screen and (max-width: 480px) and (min-width:320px) {
     .nuestra_empresa {
         width: 100%;
+        height: 30%;
         flex-direction: column;
         align-items: center;
         div {
-            width: 100%;
             img {
                 width: 100%;
             }
