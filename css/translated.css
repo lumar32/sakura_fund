@@ -664,6 +664,9 @@ footer {
         width: 100%; } }
 
 /* TESTIMONIOS */
+a:hover {
+  color: white; }
+
 .supercard_testimonios {
   display: flex;
   justify-content: center; }
